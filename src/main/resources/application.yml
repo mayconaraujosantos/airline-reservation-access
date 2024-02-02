@@ -9,9 +9,9 @@ spring:
   application:
     name: minha-api
   datasource:
-    url: jdbc:oracle:thin:@192.168.100.4:1521/FREEPDB1
-    username: system
-    password: S3gur@P@ssw0rd
+    url: ${SPRING_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
     hibernate:
